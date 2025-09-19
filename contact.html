@@ -6,78 +6,146 @@
     <title>How to contact us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="cave/3.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <script src="https://kit.fontawesome.com/73e8776f4f.js" crossorigin="anonymous"></script>
 <body>
-        <header>
-        <nav>
-            <div class="brands">
-        <i class="fa-brands fa-facebook fa-xl fa-brandss" style="color: #ff6d4d;"></i>
-        <i class="fa-brands fa-linkedin fa-xl fa-brandss" style="color: #ff6d4d;"></i>
-        <i class="fa-brands fa-instagram fa-xl fa-brandss" style="color: #ff6d4d;"></i>
-        <i class="fa-brands fa-twitter fa-xl fa-brandss" style="color: #ff6d4d;"></i>
-        <i class="fa-brands fa-whatsapp fa-xl fa-brandss" style="color: #ff6d4d;"></i>
+    <section>
+        <nav class="nav">
+            <i class="uil uil-bars navOpenBtn"></i>
+                <ul class="nav-links">
+                    <i class="uil uil-times navCloseBtn"></i>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                            <ul class="dropdown">
+                                <li><a href="gallery.html#hb">Handbags</a></li>
+                                <li><a href="gallery.html#bp">Backpacks</a></li>
+                                <li><a href="gallery.html#tote">Tote Bags</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li>
+                            <a href="#">Categories</a>
+                            <ul class="dropdown">
+                                <li><a href="index.html#newin">New In</a></li>
+                                <li><a href="index.html#sale">Sales</a></li>
+                            </ul>
+                        </li>
+                </ul>
+
+            <a href="#" class="logo"><img src="/cave/1-removebg-preview.png" alt="nope"></a>
+
+            <i class="uil uil-search search-icon" id="searchIcon"></i>
+
+            <div class="search-box">
+                    <i class="uil uil-search search-icon"></i>
+                    <input type="text" placeholder="Search here..." />
             </div>
-            <div class="logo"></div>
-            <div class="icons">
-            <button><i class="fa-solid fa-user fa-xl faa-solid" style="color: #ff6d4d;"></i></button>
-            <button><i class="fa-solid fa-magnifying-glass fa-xl faa-solid" style="color: #ff6d4d;"></i></button>
-            <button><i class="fa-solid fa-heart fa-xl faa-solid" style="color: #ff6d4d;"></i></button>
-            <button><i class="fa-solid fa-circle-question fa-xl faa-solid" style="color: #ff6d4d;"></i></button>
-            </div>
+
         </nav>
-        <!--  -->
-            <div class="div">
-                <div>
-            <ul class="lhs">
-                <li class="hover"><a href="">New In</a></li>
-                <li class="hover"><a href="">Sale</a></li>
-                <li class="hover"><a href="">Handbags</a></li>
-                <li class="hover"><a href="">Backpacks</a></li>
-                <li class="hover"><a href="">Tote Bags</a></li>
+
+
+        <nav class="nav2 open">
+            <!-- For Social media links -->
+            <ul class="nav-links2">
+                <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                <li><a href="#"><i class="uil uil-instagram"></i></a></li>
+                <li><a href="#"><i class="uil uil-linkedin-alt"></i></a></li>
             </ul>
-            </div>
-            <ul class="rhs">
-                <li><a href="project.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="faq.html">FAQ</a></li>  
-            </ul>
-            <button class="button">
-            <i class="fa-solid fa-cart-shopping" style="color: white;"></i>
-            Cart
-            </button> 
-            </div>                              
-    </header>
+
+            <!-- Cart button -->
+            <a href="cart.html" class="cart-btn">
+                <i class="uil uil-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </nav>
+    </section>
     <main>
-        <section id="contact">
-
+        <section id="contact" class="home">
+            <section class="find">
+                <div class="findpic"data-aos="fade-right"></div>
+                    <div class="findtxt">
+                        <h1 id="find">Find us</h1>
+                        <h3>Where</h3>
+                        <h4>676 Pacific C Hwy <br>Huntington Way, CA 67898</h4>
+                        <a href="#map"><button class="map">View Map</button></a><a href="#order"><button>Place An Order</button></a>
+                        <h3>When</h3>
+                        <p>Monday-Friday</p>
+                        <p>7am-6pm</p>
+                        <p>Saturday/Sunday</p>
+                        <p>8am-6pm</p>
+                    </div>
+            </section>
         </section>
-                <section>
-        <div class="subs">
-            <h3>Subscribe</h3>
-            <h2>Keep Up To Date With Us</h2>
-            <p>Subscribe to get updated on changes and daily content.</p>
-            <form action="https://formspree.io/f/xkgzqnbl" method="post" class="form">
-            <input type="text" placeholder="Enter a valid email address"><input type="submit">
-            </form>
-        </div>
-    </section>
-    <section class="find">
-        <div class="findpic"data-aos="fade-right"></div>
-        <div class="findtxt">
-            <h1 id="find">Find us</h1>
-            <h3>Where</h3>
-            <h4>676 Pacific C Hwy <br>Huntington Way, CA 67898</h4>
-            <a href=""><button>Place An Order</button></a>
-            <h3>When</h3>
-            <p>Monday-Friday</p>
-            <p>7am-6pm</p>
-            <p>Saturday/Sunday</p>
-            <p>8am-6pm</p>
-        </div>
+    <section id="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.931662741341!2d-118.00695292553607!3d33.65893253839794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd214375c5793f%3A0x6d7c05c68d9d5418!2s676%20Pacific%20Coast%20Hwy%2C%20Huntington%20Beach%2C%20CA%2092648%2C%20USA!5e0!3m2!1sen!2sng!4v1756312934111!5m2!1sen!2sng" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
     </section>
 
+    <section>
+        <div class="homepg">
+            <div class="pg1 pg2">
+                <h3>Enquiries</h3>
+                <h4>PR & MARKETING ENQUIRIES</h4>
+                <p>+234 813 408 4293</p>
+                <h4>Dropshipping Enquiries</h4>
+                <p>+234 803 561 6738</p>
+                <h4>Reservations</h4>
+                <p>+234 701 456 3843</p>
+            </div>
+            <div class="enquirespic"></div>
+        </div>
+    </section>
+    <section>
+        <div class="contact">
+            <div>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAD00lEQVR4AexXXWhURxT+zm426Q8loFYJCK0vbWkLbaWlf1D1pdB2N/aHlD4XFUtzQyqhYCt0iyiiBqMbESKKiPigoJINCj7oCoqiKKigPokPioIaxFWySVaP36xumLu7c/fuTQQfvJwvd+ac75z5diYzsxvDC/a8FFRvQSLPkP7d/oZ2JZeplzqqXvKeeqk7RI7o1p5vX683sCseSZD++f1bGNEzUOll4fmAtAKYTswjNmC05ZR6381mu2FrWJAuWZJALH6QI71LuOxDoGmoxHUxHP6Ywz/h5idtUa+9k0txlVC03Bxj8H2inn1kuCaHuKqdyaVhBAYK0u6f24Cms4BmOPocIqrNgcgWNN86rUt/mhlUJOYKakdHHMXx/Yx/QEyNiX6MRHFPUDGnIMwaWQzB50HJEWPztKv9N1euW5DIH66kSftVF7lquAUB77mSpsD/iatGTUH6X0czExLE87LWZ2NU1a8SVNoFw4UTZArxvCyO4cJxHilvVg7gE1TaWYniIZI+JSZp4rFAH+Gyz4Cm/ZpOx2yCr4NZo50MziUmaeJJZrBfMtm/WOhfwmVfY/js73bQL0jUF7SJodsq3UIxE3zRwkS7VkPhG9MvCHgb9R7BGkDMcqD6EU/6BzeW/dqV6nl2AZddtd7v2M5KQUU7WN2WHtmUXV6aAcEKX7xiZnj4LYdinY9Tu6O2u1LQJTtY1VYdKfsobBVPcs4WPUaMPTNecgVUVzMSwvSiTfILUuxA0CPYbG7+MoWiOAu6wLdMXmoVICsR9tHYdpvqFzTWtpPBM0SAaUa95OIyQfqHcuW2dqbMEv1T7od4n8KMubttnk+QDAyMI55YSAK/cvCv02TAnilDY7+XS9hj2iFxEs1ISTr92Ob7BJmA9O27iWmvfMX2IyLAzEy1m3MLJTHQZQHkytA4pue/kd7sncpAlSBDkP/3jvE98Q/MtsOMqOQRfoFrRIypVZB0ruaOrinIZBBXiBAmC0KQKij+nWUH3YIEW23ilLY1tsVVzy1oWt5sx3OuxEn4czwmdrnynYKernFxIRSXXckR/Ny9xV+D8pyCTJJkDl3Hgzxvf/G4pYfou000ZoobTNjHa2QRd9YXrBlYI1AQC0F25Arm7uKpnJJMdiby+VfpP0/UswsYbWuW/uxs5v3C9zZx7Cy7UF1BNtm0hQIRj//ITxywlGYXFX8oHbQmqQE0LMjUlr4D1/Ca8CeSmJP5GH33ibtEDrxo0TL2JZfmOvsNWyRBZhRZO5iXzGCvZLLziVZiBlG6aGX94YeGEwWRBUUZLEzOCyfoCQAAAP//nql8KQAAAAZJREFUAwBF3DFYPdbRQQAAAABJRU5ErkJggg=="/>            
+            <h3>Tested & Trusted</h3>
+            <p>Our Customers can testify about us.</p>
+            </div>
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAB1klEQVR4AeyUPU4DQQyF7YiChiAQEQUFDQdAoiJAQR9SAQ2KUCgTCEeAM4A2BwBukFuAxBHSpkFC/JSwxpPMCrKZjcc7IFFsNE/ZtT3Pn8aaLcE/+xVA0kCCT4g6exHr1SqSGkr5ICCGiICgxZqzag1jUtcp+SAg9m2w0ssVS9dkvocCZRrnTYQC3Toau2KOMncoCAivem1A6LLerLrDmLuXVzQIyHQwAKyyVdvEQpQbiG9Tgzr1S6fOakd5oXIB0Wmtydf8BogunAK8Y9BjyPHLBQRYaoq9YjoRaxwFaiA6ry8D0LbDazyEsDOqHQ9Lb2ogiOGATZElLQSK96WidF4PBHCYNsl8j9G/1pqogEYj8BiXNedvk3psKiDFuL6RlGPTAWnGlSApx+YNpB5XAqS8bd5A8EEr3KPP0q6+3eu1zxsIo94jXvfW+KO4xc4DlrQGEFPV7DF7peIk7w2UbIDFl3t+rrCktQCV9wepKJ3XAz3Pb7DJDEtas/BUXpeK0nk90GdcTZtkviP511oTPRCifxOiTdvH+08PBLTr7a6Bt6ZqIL41Syw0sh4TfyZntTqRFAI+QILF76YLIOk8ixP60xOyN2l4434+S02n5YuRTTsdk/sCAAD//0evbDQAAAAGSURBVAMAZM2USYF8uAMAAAAASUVORK5CYII="/>
+                <h3>Dress Attire</h3>
+                <p>Every bag matches every fit..no matter the fit.</p>
+            </div>
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAEF0lEQVR4AexWXYgbVRT+ziS1u9JaLAgKtVLwZQXxoUVBK+i6otIkiw8rIohSENvtJlr0xQd1URFBbW2yK7W0oA+imCI02W3XglAfi1WKP6AWLEWsdssu3f4HNnP63UlmmklmJpNuWvrQyzlzzz3n3JPvnnvmZCxcZ+MGoHYXciND102GdHhoiY5k1ujbQzdFgbomV6a51FokLh6H6I+YvXhMc5lHw0BddUA6ku6Hyn4CWEo2dDtUJ/XVdX1m0cxXFZBuyjwOwRR/tJfcSL2oWs82Klw5EJBmBwd4smHdlE5pNnWfblx3q7sh7qy59CAs3Uv/ReRWUr3QqgRaAPF+idzex5ON01oG5DCS1qxm02fIv2s2M0XewQJ9k74vEHi/DmfubixWzaWehmI3gCQ5iI5Cqp8GGaxGpQ4NJXi/D1BXJTfTEiruAfQJ8kss0Hfo+zmBf4+EHmGxVgh4mnwQKrvpGwbmOJL2gBT2naZPC/kASbFYlUJ5MzB/J3/oA3oHbqI+jG6j4X6yLy7XNVL8C7v6oGyd/LumaH0GbiT6k5Ivv4FKz0qe9i1umyEvjAwYrT4k43uPRQUKBORukB3FORkrvYvFlbsAeR3Af+TOKSYYEzgSkHEwLB/tPyeF0sfA/CrWzUbq/iF3QLK5XWbcYLEAuc68yoqMTWzH/z2rIPIii3vOtUXPamor2qVu7QhQfQ9M8UNxMyDLEGdYyiuP4wh2mnh+Pi/2ofXMTmAf8Tm6CxsrXbHd3HGG6mB2tgvss8sCACnY8kYG79XRR1oam+bSzzMzuwAIOhqyIq67L0MOiGz6a4j9C2aWnmfXPaTZ1C4CyfKv4hXWzRcRgU9B5RnaeSY+/bTCie3XBa58gDBzizm9CWqcF/GxGpD1UOQh+gkQlhmdg43H2LOKAL4hN5OF6WV3NCuD1n5AycUb6n3mjyDnYJ0BI/0yXv7ZsYv9njM3P5LVWG+aD5BsLV4wfUYK5T6IPAXId2DRkMPoLOwGMPSS/ORvqO2Db9gS603zAWoMIPnSlBRKT8KSPuo/Izd/v5yFZQ14maGDR2qbP2ZvWRN0YYBqQQDZVvpTCuUNELwM/zgs2/Yc9KtqK2b5AKVD5MskC8zQ5Uh1afmZryjNkl1araOjoRnmAZprqTsZAuAAkNED8xS2k13qxcmfzHW6a/+cL5cA+Qve6NKVefGMYEmek02uUULW1ITWJzunMkvvN1i6myETmPV0ApBv4Q61QwE5LstPf8m5/qkiFQUhInqE10DoPh3zTIKjnhwgONcs+JCmaX66PuxkjYso6hgQ37gfGND0mi2Sn9hCOZoSPTvZ5dfyA62hnsK3dAzICaXWc1IovebIbR5Os81PHGnj5pmvCJCM7fnVi9Bl4YoAdRmDL9wlAAAA//+mOLVfAAAABklEQVQDAHJTSFhEvo9bAAAAAElFTkSuQmCC"/>
+                <h3>Delivery</h3>
+                <p>Delivered to 50+ countries worldwide</p>
+            </div>
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAD+UlEQVR4AexXW2gcZRT+zoYQL/VBArXgnSII1hdBfRQERWgmbYSUBmufaixtdomNaEHRLYUqBW3cDbRYCApeqikiuwuV+uKjiA9ioSA+FItgEeqFCjZls6ffmdm5z2Q3u1toocM585//nO+c/5vzZ/7MFnCdXTcJddqQG7NDCojObHlUS84ualH3jj+je7bci5xLS2P3uZiSU1Q3Z/Mmq5EDj7lX7ZDunlivM2Ofo+j8B2n9DMVxagUFPY2h1nmdcb7X2a0P+BW1uHWjFp0foPKbi1FU4OYUzrDGv4x9pnsnRn181phLSItjDoabZyGynYm3UdMieBIrK2fYhW3E7wRWfiLocWqW3EHnFArNs8Q6tDMlkxAT3gSkBsB/mhZUT5DcAVchnzLWopqsYxe+AORjAOuoJq0Y3nJBlEWA9WBtLTqvI+NKEdLS+HOAHER4fQ3RB2WhMSWVWtnVam2H+SBohLDASuOZSzobiThF9eVdbvnT/sQfY4R0enqYT3bMD3L8SKr1Cak0ztOOieur1Me5UDUSmM/FL9TPoVrfzIf4JMALjunk5FAwpxEjhJELL9J3P9XkHNDcbUaeCrdBFuolLvKyKcm8koc1v+ExdMs0IL/Dux7CXctTnund44SAbZ6bd9WDUj21TKujSKX+oWlHIAFyZOl/bvdhmr487xs2Jgk9Yk5XW63ofruugd1EToe19OHQBhKE1H+r+C488WcUOGD7n6Ce4M7AppEghL/p8+SvH+/xjGtwb+rdkaoXI3ayQ/g1DMpToT1gawjR1/2XaPV4hwTfBkHFa8lXMoj1Yeirz94OxVxYQr8J7eTfUGF4kcHLVJNN2LB81IyB6pURO+c2tGtexK2FE23bHWIdkvmv/qA3ckrrSzzij9A3EHFrKXYExUTm5HDtUjCnESPEOXi4HeI4T/VlVovj7/mTXsd2jdlI/iGp1Oz/X8SV3LJ2iKR44srx9pSD7nOfjlYv4uXqvkjuUa7xRmQemKkO+RGp1uyIj5ACO+Wsefs8Moh2xsjsQc6VS8jw/ZJKk9FFqdZzydiaqxIygGR1quS8Y7HVlB9thol0RhdRbexaLcdiHQkZKEVKsb+9oIVT6saICQMeGQFPoNCZaXVFyDK7JZUmw69LdqYbMrZO14QM3IlUJpnRx3Z2S8bWWBMhS8gkVXTe4qdvmRuy3zCesjNGplz2v709d4d7N4RSJVKkgAP89H07BMpJ9EDG8nsiZIkZpMxNJZkLI9tljZ1hois9E7Jsl5ToB2a39UsYmaWllfZ8zUNfhGw1/vrgWaOT/E6ew+ilF6QPMlavb0JWRKqNkyT2vpS/a9q8Hx0IoX4IJHNvEkp2JDm/CgAA//8BVCWJAAAABklEQVQDAOUCbFj4v/NnAAAAAElFTkSuQmCC"/>
+                <h3>Favorites</h3>
+                <p>Shop your favorites from us.</p>
+            </div>
+        </div>
+    </section>
+    <section id="order">
+        <div class="find"data-aos="fade-right">
+            <div class="placeorder"></div>
+            <div class="order">
+                <h1 id="find">Place an Order</h1>
+                <p>You can place an order with us online.</p>
+                <form action="" method="post">
+                    <label for="name">Name</label><br>
+                    <input type="text" name="text" placeholder="Enter Your Name" required><br>
+                    <label for="number">Phone</label><br>
+                    <input type="tel" placeholder="Enter your phone (e.g +2348055833979)" name="tel" required><br>
+                    <label for="date">Date</label><br>
+                    <input type="date" name="date" required><br>
+                    <label for="time">Time</label><br>
+                    <input type="time" name="time"><br>
+                    <input type="submit" value="Place An Order" class="submit">
+                </form>
+            </div>
+        </div>
+    </section>
     </main>
     <section class="sect">
         <div class="class">
@@ -107,9 +175,10 @@
         </div>
         <div class="footer">
             <h2>Navigation</h2>
-                <li><a href="project.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="faq.html">FAQ</a></li>
         </div>
         <div class="footer">

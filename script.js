@@ -11,50 +11,37 @@ if (text.style.maxHeight) {
     }
 });
 }
-//svg//
-//svg end//
+//nav//
+    const nav = document.querySelector(".nav"),
+    searchIcon = document.querySelector("#searchIcon"),
+    navOpenBtn = document.querySelector(".navOpenBtn"),
+    navCloseBtn = document.querySelector(".navCloseBtn"),
+    nav2 = document.querySelector(".nav2"),
+    sticky=nav.offsetTop;
+    
 
-// button onclick
-function addToCart(name, price, image) {
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const existing = cart.find(item => item.name === name);
-      if (existing) {
-        existing.quantity++;
-      } else {
-        cart.push({ name, price, quantity: 1, image });
-      }
-      localStorage.setItem("cart", JSON.stringify(cart));
-      alert(name + " added to cart!");
+searchIcon.addEventListener("click", () => {
+    nav.classList.toggle("openSearch");
+    nav.classList.remove("openNav");
+    nav2.classList.toggle("nav2")
+    if (nav.classList.contains("openSearch")) {
+        return searchIcon.classList.replace("uil-search", "uil-times");
     }
-//cart page
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    function updateCart() {
-      const cartDisplay = document.getElementById("cartDisplay");
-      console.log(cartDisplay);
-        if (cart.length === 0) {
-        cartDisplay.innerHTML 
-        = "<p>Your cart is empty.</p>";
-        return;
-      }
-    cartDisplay.innerHTML = cart.map(item =>`
-      <div class="cart-item">
-      <div class="cart-image" style="background-image: url('${item.image}')"></div>
-      <div class="cart-details">
-      <p><strong>${item.name}</strong></p>
-      <p>Price: $${item.price.toFixed(2)}</p>
-      <p>Quantity: ${item.quantity}</p>
-      <p class="remove" onclick="removeItem('${item.name}')">Remove</p>
-      </div>
-      </div>
-  `).join("");
-}
-function removeItem(name) {
-    cart = cart.filter(item => item.name !== name);
-    localStorage.setItem("cart", JSON.stringify(cart));
-    updateCart();
-}
-updateCart();
+    searchIcon.classList.replace("uil-times", "uil-search");
+});
 
+navOpenBtn.addEventListener("click", () => {
+    nav.classList.add("openNav");
+    nav.classList.remove("openSearch");
+    nav2.classList.toggle("nav2");
+    searchIcon.classList.replace("uil-times", "uil-search");
+});
+
+navCloseBtn.addEventListener("click", () => {
+    nav.classList.remove("openNav");
+    nav2.classList.toggle("nav2");
+
+});
 
 // nav bar responsiveness
 const hamMenu= document.querySelector('.ham-menu')
@@ -62,3 +49,38 @@ const offScreenMenu= document.querySelector('.off-screen-menu')
 hamMenu.addEventListener('click', () => {hamMenu.classList.toggle('active');
 offScreenMenu.classList.toggle('active')
 }) 
+
+//Cart storage in localstorage
+function getCart(){
+    return JSON.parse(localStorage.getItem("cart")) || [];
+}
+
+function saveCart(cart){
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+//Update cart counting
+function updateCartCount(){
+    const cart= getCart() 
+    const cartCount= document.querySelector(".cart-count");
+    if(cartCount){
+        cartCount.textContent= cart.length;
+    }
+}
+
+//Add to cart
+document.addEventListener("DOMContentLoaded", ()=> {
+    document.querySelectorAll(".product").forEach(product => {
+        const name= product.querySelector("h4").textContent;
+        const rawPrice = product.querySelector(".price").textContent.replace("$", "").trim();
+        const price = parseFloat(rawPrice);
+        const btn= product.querySelector(".add-to-cart").addEventListener("click", ()=>{
+            const cart= getCart()
+            cart.push({name, price});
+            saveCart(cart);
+            updateCartCount();
+            alert(`${name} added to cart🎉`)
+        });
+    });
+//
+updateCartCount();
+})

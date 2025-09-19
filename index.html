@@ -6,53 +6,67 @@
     <title>Tote-ally Yours</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/cave/3.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 </head>
 <script src="https://kit.fontawesome.com/73e8776f4f.js" crossorigin="anonymous"></script>
 <body>
-    <header>
-        <div class="ham-menu">
-            <span></span><span></span><span></span>
-        </div>
-        <nav>
-            <div class="brands">
-        <i class="fa-brands fa-facebook fa-xl fa-brandss" style="color: #ff6d4d;"></i>
-        <i class="fa-brands fa-linkedin fa-xl fa-brandss" style="color: #ff6d4d;"></i>
-        <i class="fa-brands fa-instagram fa-xl fa-brandss" style="color: #ff6d4d;"></i>
-        <i class="fa-brands fa-twitter fa-xl fa-brandss" style="color: #ff6d4d;"></i>
-        <i class="fa-brands fa-whatsapp fa-xl fa-brandss" style="color: #ff6d4d;"></i>
+    <section>
+        <nav class="nav">
+            <i class="uil uil-bars navOpenBtn"></i>
+                <ul class="nav-links">
+                    <i class="uil uil-times navCloseBtn"></i>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                            <ul class="dropdown">
+                                <li><a href="gallery.html#hb">Handbags</a></li>
+                                <li><a href="gallery.html#bp">Backpacks</a></li>
+                                <li><a href="gallery.html#tote">Tote Bags</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li>
+                            <a href="#">Categories</a>
+                            <ul class="dropdown">
+                                <li><a href="#newin">New In</a></li>
+                                <li><a href="#sale">Sales</a></li>
+                            </ul>
+                        </li>
+                </ul>
+
+            <a href="#" class="logo"><img src="/cave/1-removebg-preview.png" alt="nope"></a>
+
+            <i class="uil uil-search search-icon" id="searchIcon"></i>
+
+            <div class="search-box">
+                    <i class="uil uil-search search-icon"></i>
+                    <input type="text" placeholder="Search here..." />
             </div>
-            <div class="logo"></div>
-            <div class="icons">
-            <button><i class="fa-solid fa-user fa-xl faa-solid" style="color: #ff6d4d;"></i></button>
-            <button><i class="fa-solid fa-magnifying-glass fa-xl faa-solid" style="color: #ff6d4d;"></i></button>
-            <button><i class="fa-solid fa-heart fa-xl faa-solid" style="color: #ff6d4d;"></i></button>
-            <button><i class="fa-solid fa-circle-question fa-xl faa-solid" style="color: #ff6d4d;"></i></button>
-            </div>
+
         </nav>
-        <!--  -->
-            <div class="div">
-                <div>
-            <ul class="lhs">
-                <li class="hover"><a href="#newin">New In</a></li>
-                <li class="hover"><a href="#sale">Sale</a></li>
-                <li class="hover"><a href="#handbags">Handbags</a></li>
-                <li class="hover"><a href="#bp">Backpacks</a></li>
-                <li class="hover"><a href="#tote">Tote Bags</a></li>
+
+        <nav class="nav2 open">
+            <!-- For Social media links -->
+            <ul class="nav-links2">
+                <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                <li><a href="#"><i class="uil uil-instagram"></i></a></li>
+                <li><a href="#"><i class="uil uil-linkedin-alt"></i></a></li>
             </ul>
-            </div>
-            <ul class="rhs off-screen-menu">
-                <li class="hover"><a href="project.html">Home</a></li>
-                <li class="hover"><a href="about.html">About</a></li>
-                <li class="hover"><a href="contact.html">Contact</a></li>
-                <li class="hover"><a href="faq.html">FAQ</a></li>  
-            </ul>
-            <button id="viewCart" class="button" onclick="location.href='cart.html'">
-            <i class="fa-solid fa-cart-shopping" style="color: white;"></i>
-            Cart</button> 
-            </div>                              
-    </header>
+
+            <!-- Cart button -->
+            <a href="cart.html" class="cart-btn">
+                <i class="uil uil-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </nav>
+    </section>
     <main>
-        <section id="home">
+        <section id="home" class="home">
             <div class="homepg">
                 <div class="pg1"data-aos="fade-right">
                     <h2>Be Exquisite</h2>
@@ -73,68 +87,61 @@
                 <div class="bag2"></div>
             </div>
         </section>
-        <section id="newin">
-            <h1>New Arrivals</h1>
-            <div class="newin">
-                  <div class="one">
-    <div class="oneimg"></div>
-    <p class="large">Madison Medium Top Handle</p>
-    <p style="color:#ff6d4d;">$33.90</p>
-    <div class="circle">
-      <p style="text-decoration: underline;">Add to Cart</p>
-      <button class="bruh" onclick="addToCart('Madison Medium Top Handle', 33.90, '/cave/LUXURY\ Top\ Handle\ Handbag\ _.jpeg')">
-        <i class="fa-solid fa-plus fa-xl"></i>
-      </button>
-    </div>
-  </div>
-                <div class="one">
-                    <div class="oneimg1"></div>
-                    <p class="large">Nancy Gonzalez Bow Styled Bag</p>
-                    <p style="color:#ff6d4d;">$30.99</p>
-                    <div class="circle">
-                    <p style="text-decoration: underline ;">Add to Cart</p>
-                    <button class="bruh" onclick="addTocart('Nancy Gonzalez Bow Styled Bag', 30.99, '/cave/18.jpeg')">
-                    <i class="fa-solid fa-plus fa-xl"></i></button>
+
+    <section id="newin">
+        <div class="arrivals">
+            <div class="padtext">
+                <h1>New Arrivals</h1>
+                <p>Explore our newest collection of bags from one of the coolest bags brand ever.</p>
+                <a href="#newin1"><button class="shop">Shop Now</button></a>
+            </div>
+        </div>
+        <section id="newin1">
+            <div class="new">
+                <div class="product">
+                    <img src="/cave/18.jpeg" alt="" >
+                    <div class="inline">
+                        <h4>Nancy Sanchez Bow Bag</h4><p class="price">$56<sup>.30</sup></p>
                     </div>
+                    <p>Fashionably beautiful</p>
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
-                <div class="one">
-                    <div class="oneimg2"></div>
-                    <p class="large">Fendi Fashion Bag</p>
-                    <p style="color:#ff6d4d;">$57.50</p>
-                    <div class="circle">
-                    <p style="text-decoration: underline ;">Add to Cart</p><button class="bruh" onclick="addtocart()"><i class="fa-solid fa-plus fa-xl"></i></button>
+                <div class="product">
+                    <img src="/cave/this is a need.jpeg" alt="">
+                    <div class="inline">
+                        <h4>Cherry print shoulder bag</h4><p class="price">$60<sup>.00</sup></p>
                     </div>
+                    <p>A must have for every event</p>
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
-                <div class="one">
-                    <div class="oneimg3"></div>
-                    <p class="large">Nancy Gonzalez Fashion Bag</p>
-                    <p style="color:#ff6d4d;">$42.50</p>
-                    <div class="circle">
-                    <p style="text-decoration: underline ;">Add to Cart</p><button class="bruh" onclick="addtocart()"><i class="fa-solid fa-plus fa-xl"></i></button>
+                <div class="product">
+                    <img src="/cave/23.jpeg" alt="">
+                    <div class="side">
+                        <h4>Leather Backpack</h4>
+                        <p class="price">$35<sup>.50</sup></p>
                     </div>
+                    <p>What says perfect more than this?</p>
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
-                <div class="one">
-                    <div class="oneimg4"></div>
-                    <p class="large">Cute Gold Leather Bag</p>
-                    <p style="color:#ff6d4d;">$55</p>
-                    <div class="circle">
-                    <p style="text-decoration: underline ;">Add to Cart</p><button class="bruh" onclick="addtocart()"><i class="fa-solid fa-plus fa-xl"></i></button>
+                <div class="product">
+                    <img src="/cave/Whats.jpg" alt="">
+                    <div class="inline">
+                        <h4>Tabby COACH Purse</h4>
+                        <p class="price">$43<sup>.45</sup></p>
                     </div>
-                </div>
-                <div class="one">
-                    <div class="oneimg5"></div>
-                    <p class="large">Micheal Kors Purse</p>
-                    <p style="color:#ff6d4d;">$13.37</p>
-                    <div class="circle">
-                    <p style="text-decoration: underline ;">Add to Cart</p><button class="bruh" onclick="addtocart()"><i class="fa-solid fa-plus fa-xl"></i></button>
-                    </div>
+                    <p>A perfect balance of pretty and fashionable</p>
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>
         </section>
+    </section>
         <section id="sale">
             <div class="white">
-            <h3 style="text-shadow: 3px 4px 3px black;">Super Deals</h3>
-            <p class="headline">Save Big Now!</p>
+            <h3>Today's best deals for you</h3>
             </div><hr>
             <div class="sale">
                 <div class="two">
@@ -167,93 +174,13 @@
                 </div>
             </div>
         </section>
-        <section id="handbags">
-            <h1>Handbags</h1>
-            <div class="handb">
-                <div>
-                    <div class="bg">
-                        <div class="pic1"></div>
-                        <p>Lolita Handbags(3)</p>
-                        <p style="color: #ff6d4d;">$90.87 </p>
-                        <div class="circle gap">
-                    <p style="text-decoration: underline ;">Add to Cart</p><button class="bruh" onclick="addtocart()"><i class="fa-solid fa-plus fa-xl"></i></button>
-                    </div>
-                    </div>
-                    <div class="bg">
-                        <div class="pic2"></div>
-                        <p>PU Leather Shoulder Bag</p>
-                        <p style="color: #ff6d4d;">$30.00</p>
-                        <div class="circle gap">
-                    <p style="text-decoration: underline ;">Add to Cart</p><button class="bruh" onclick="addtocart()"><i class="fa-solid fa-plus fa-xl"></i></button>
-                    </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="bg">
-                        <div class="pic3"></div>
-                        <p>Harley Sequin Shoulder Bag</p>
-                        <p style="color: #ff6d4d;">$28.00</p>
-                        <div class="circle gap">
-                    <p style="text-decoration: underline ;">Add to Cart</p><button class="bruh" onclick="addtocart()"><i class="fa-solid fa-plus fa-xl"></i></button>
-                    </div>
-                    </div>
-                    <div class="bg">
-                        <div class="pic4"></div>
-                        <p>Harley Sequin Shoulder Bag</p>
-                        <p style="color: #ff6d4d;">$28.00</p>
-                        <div class="circle gap">
-                    <p style="text-decoration: underline ;">Add to Cart</p><button class="bruh" onclick="addtocart()"><i class="fa-solid fa-plus fa-xl"></i></button>
-                    </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="bg">
-                        <div class="pic5"></div>
-                        <p>Brown Leather Purse Bag</p>
-                        <p style="color: #ff6d4d;">$36.90</p>
-                        <div class="circle gap">
-                    <p style="text-decoration: underline ;">Add to Cart</p><button class="bruh" onclick="addtocart()"><i class="fa-solid fa-plus fa-xl"></i></button>
-                    </div>
-                    </div>
-                    <div class="bg">
-                        <div class="pic6"></div>
-                        <p>Christian Dior Pink Bag</p>
-                        <p style="color: #ff6d4d;">$76.55</p>
-                        <div class="circle gap">
-                    <p style="text-decoration: underline ;">Add to Cart</p><button class="bruh" onclick="addtocart()"><i class="fa-solid fa-plus fa-xl"></i></button>
-                    </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="bg">
-                        <div class="pic7"></div>
-                        <p>Denim Coach Teri Bag</p>
-                        <p style="color: #ff6d4d;">$48.11</p>
-                        <div class="circle gap">
-                    <p style="text-decoration: underline ;">Add to Cart</p><button class="bruh" onclick="addtocart()"><i class="fa-solid fa-plus fa-xl"></i></button>
-                    </div>
-                    </div>
-                    <div class="bg">
-                        <div class="pic8"></div>
-                        <p>Quilted Shoulder Bag</p>
-                        <p style="color: #ff6d4d;">$46.60</p>
-                        <div class="circle gap">
-                    <p style="text-decoration: underline ;">Add to Cart</p><button class="bruh" onclick="addtocart()"><i class="fa-solid fa-plus fa-xl"></i></button>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="bp">
-            
-        </section>
         <section>
         <div class="subs">
             <h3>Subscribe</h3>
             <h2>Keep Up To Date With Us</h2>
             <p>Subscribe to get updated on changes and daily content.</p>
             <form action="https://formspree.io/f/xkgzqnbl" method="post" class="form">
-            <input type="text" placeholder="Enter a valid email address"><input type="submit">
+            <input type="text"  name="text" placeholder="Enter a valid email address"><input type="submit" name="submit">
             </form>
         </div>
     </section>
@@ -263,7 +190,7 @@
             <h1 id="find">Find us</h1>
             <h3>Where</h3>
             <h4>676 Pacific C Hwy <br>Huntington Way, CA 67898</h4>
-            <a href="contact.html"><button>Place An Order</button></a>
+            <a href="contact.html#map"><button class="map">View Map</button></a><a href="contact.html#order"><button>Place An Order</button></a>          
             <h3>When</h3>
             <p>Monday-Friday</p>
             <p>7am-6pm</p>
@@ -300,9 +227,10 @@
         </div>
         <div class="footer">
             <h2>Navigation</h2>
-                <li><a href="project.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="faq.html">FAQ</a></li>
         </div>
         <div class="footer">
@@ -328,10 +256,10 @@
             Back To Top</button></a>
         </div>
     </footer>
-    <script src="script.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
+<script src="script.js"></script>
 </body>
 </html>
